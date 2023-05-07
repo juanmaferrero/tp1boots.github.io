@@ -1,0 +1,22 @@
+.img-card {
+    height: 75%;
+    object-fit: cover;
+}
+
+.card {
+    height: 60vh;
+}
+
+body{
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+#menu a {
+    font-size: 18;
+    
+}
+#conf a {
+    font-size: 18;
+    font-weight: blod;
+    color:white;
+}
