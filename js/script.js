@@ -23,7 +23,7 @@ let categoria = document.getElementById("Categoria")
 let divresumen = document.getElementById("resumen")
 
 formulario.addEventListener("reset", ()=>{
-    divresultado.textContent = ""
+    divresumen.textContent = ""
 })
 
 formulario.addEventListener("submit", (evento)=>{
