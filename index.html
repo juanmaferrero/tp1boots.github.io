@@ -106,14 +106,14 @@
       <div class="card-text col-md-6">
         <h5 class="card-title text-left pt-3">Bs As - Octubre</h5>
         <p class="card-text text-justify">Buenos Aires es la capital y ciudad más poblada de la República Argentina. Está situada en la región centro-este del país, sobre la orilla sur del Río de la Plata, en la región pampeana. La población de la ciudad, según el Censo de 2022 es de 3.120.612 habitantes. Buenos Aires es una ciudad cosmopolita y un importante destino turístico.12​13​ Su compleja infraestructura la convierte en una de las metrópolis de mayor importancia de América y es una ciudad global de categoría alfa,14​ dadas sus influencias en el comercio, finanzas, moda, arte, gastronomía, educación, entretenimiento y principalmente en su marcada cultura</p>
-        <a href="#conviertete" class="btn btn-outline-light">Conocé más</a>
+        <a href="" class="btn btn-outline-light">Conocé más</a>
       </div>
   </div>
 </div>
 <!--CONVIERTETE-->
 
-<div class="d-grid  text-center col-6 mx-auto" ID="conviertete">
-<h6 class="text p-5">CONVIÉRTETE EN UN</h6>
+<div class="d-grid  text-center col-6 mx-auto pt-5" ID="conviertete">
+<h6 class="text">CONVIÉRTETE EN UN</h6>
 <h1 class="text">ORADOR</h1>
 <h6 class="text">Anótate como orador para dar una charlin ignite. Cuéntanos de qué quieres hablar!</h6>
 
@@ -143,11 +143,114 @@
   </div>
 </div>
 </div>      
+
+<!--COMPRAR-->
+
+<div class="d-grid gap-2 text-center col-10 mx-auto " ID="comprar">
+  <h1 class="text-center">Comprar Tickets</h1>
+  <form id="form_compra" method="POST" class="p-5">
+      <div class="card-group p-5 gap-5"">       
+       <div class="card" style="width: 18rem;"> 
+        <span class="border border-primary" style="--bs-border-opacity: .5;">
+          <div class="card-body" >
+            <h5 class="card-title text-center">Estudiante</h5>
+            <p class="card-text text-center">Tiene un descuento</p>
+            <h5 class="card-title text-center">80%</h5>
+            <p class="card-text text-muted text-center">*presentar documentacion</p>
+          </div>
+        </span>
+      </div>
+      <div class="card" style="width: 18rem;"> 
+        <span class="border border-success" style="--bs-border-opacity: .5;">
+          <div class="card-body" >
+            <h5 class="card-title text-center">Trainee</h5>
+            <p class="card-text text-center">Tiene un descuento</p>
+            <h5 class="card-title text-center">50%</h5>
+            <p class="card-text text-muted text-center">*presentar documentacion</p>
+          </div>
+        </span>
+      </div>
+      <div class="card" style="width: 18rem;"> 
+        <span class="border border-warning" style="--bs-border-opacity: .5;">
+          <div class="card-body" >
+            <h5 class="card-title text-center">Junior</h5>
+            <p class="card-text text-center">Tiene un descuento</p>
+            <h5 class="card-title text-center">15%</h5>
+            <p class="card-text text-muted text-center">*presentar documentacion</p>
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div>
+    <p class="text-center">VENTA</p>
+    <h1 class="text-center">VALOR TICKET $200</h1> 
+    <div class="container mb-3">
+   </div>
+  <div class="container">   
+   
+    <div class="row g-2">
+      <div class="col-md">
+          <div class="form-label">
+              <input type="text" class="form-control" id="floatingNombreTicket" placeholder="Nombre">
+          </div>
+      </div>
+       <div class="col-md">
+           <div class="form-label">
+              <input type="text" class="form-control" id="floatingApellidoTicket" placeholder="Apellido">
+           </div>
+      </div>
+      <div class="mb-3">
+        <label for="floatingCorreoTicket" class="form-label"></label>
+        <input type="email" class="form-control" id="floatingCorreoTicket" placeholder="Correo">
+      </div>
+    </div>
+
+    
+    <div class="row">
+      <div class="col-md">
+          <div class="form-label">
+             <label for="antidadTicket" class="form-label">Cantidad</label>
+              <input type="number" min=0 class="form-control" id="CantidadTicket" placeholder="Cantidad">
+          </div>
+      </div>  
+      
+      <div class="col p-2">
+          <label for="Categoria" class="'form-label">Categoría</label>
+          <select class="form-select" arial-label=".from-select" id="Categoria">
+            <option value="1" selected>Estudiante</option>
+            <option value="2" >Trainee</option>
+            <option value="3" >Junior</option>
+          </select>
+      </div>
+    </div>
+      
+        <div class="alert alert-primary" role="alert">
+          Total a pagar: $
+        </div> 
+                    
+        <div class="row" id="resumen"></div>
+        
+        <div class="row">
+          <div class="col p-1">
+              <button type="reset" id="borrar" class="btn btn-success w-100"  style="background-color:rgb(107, 208, 7) ; border-color: rgb(107, 208, 7);">Borrar</button>
+          </div>
+          <div class="col p-1">
+              <button type="submit" id="resumen" class="btn btn-success w-100" style="background-color:rgb(107, 208, 7) ; border-color: rgb(107, 208, 7);">Resumen</button>
+          </div>
+      </div>
+    </div>
+  </form>
+  </div>
+
+
+
+
 <!--FOOTER-->
     <footer>
         <div id="footer" class=>
-            <div class="conteiner-fluid pt-5">
-                <ul class="list-group list-group-horizontal bg-dark bg-gradient flex-fill">
+            <div class="conteiner-fluid pt-5 ">
+                <ul class="list-group list-group-horizontal bg-dark bg-gradient flex-fill rounded-0">
                     <li class="list-group-item bg-dark list-group-item-light flex-fill">Preguntas frecuentes</li>
                     <li class="list-group-item bg-dark list-group-item-light flex-fill">Contáctanos</li>
                     <li class="list-group-item bg-dark list-group-item-light flex-fill">Prensa</li>
@@ -161,6 +264,11 @@
         </div>
     </footer>
     
+
+  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+      <script src="script.js"></script> 
+  
     
     <script src="js/popper.min.js"> </script>
     <script src="js/bootstrap.min.js"></script>
